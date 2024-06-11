@@ -34,3 +34,13 @@ websit = 'facebook.com';
 //     console.log('Service:',server);
 // })
 // })
+
+module.exports = function(){
+    this.name = 'Nitesh',
+    this.age = 25,
+
+    this.data = function(){
+        console.log('Name:',this.name);
+        console.log('Age:',this.age);
+    }
+}
