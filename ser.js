@@ -1,12 +1,12 @@
 var UDP = require('dgram');
 
-const client = UDP.createServer('udp4');
+const client = UDP.createSocket('udp4');
 
 port = 3000
 host = 'localhost'
-client.bind(port, host, function(){
-    console.log('UDP server listening on ' + host + ':' + port);
-    });
+// client.bind(port, host, function(){
+//     console.log('UDP server listening on ' + host + ':' + port);
+//     });
 client.on("message",(message,info)=>{
     console.log('Received message from ' + info.address + ':' + info.port );
     console.log('Message: ' + message.toString());

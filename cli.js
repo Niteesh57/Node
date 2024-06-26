@@ -1,6 +1,6 @@
 var UDP = require('dgram');
 
-const server = UDP.createServer('udp4');
+const server = UDP.createSocket('udp4');
 port = 3000
 
 server.on("lisining..", function(){
