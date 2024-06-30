@@ -11,6 +11,7 @@
   "keywords": [],
   "dependencies": {
     "assert": "^2.1.0",
+    "express": "^4.19.2",
     "openssl": "^2.0.0"
   }
 }
