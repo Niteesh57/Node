@@ -1,4 +1,5 @@
 // Asny/Await
+console.log('start');
 function new1(){
     return new Promise ((resolved,rejected)=>{
         setTimeout(()=>{
@@ -54,5 +55,6 @@ async function main(){
     }
 }
 main()
+console.log("Done");
 
 

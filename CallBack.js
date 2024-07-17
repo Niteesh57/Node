@@ -1,5 +1,6 @@
 // Call back
 
+console.log('Start');
 function new1(callback){
     setTimeout(()=>{
         console.log("new1");
@@ -25,3 +26,10 @@ new1(()=>{
         })
     })
 })
+
+news = function () {
+    console.log("Function Work");
+}
+news()
+
+console.log("Done");
