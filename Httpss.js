@@ -1,4 +1,4 @@
-var http = require('http2');
+var http = require('http');
 
 http.createServer((req,res)=>{
     res.setHeader('content-type','text/plain');
