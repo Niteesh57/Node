@@ -173,6 +173,16 @@ app.get('/api/prodect/:age', (req, res) => {
         res.status(404).send('Product not found');
     }
 });
+app.get('/api/v1/query',(req,res)=>{
+    const query = req.query;
+    const result = data.filter((data)=>{
+        return Object.keys(query).every(key=>{
+            return data.info[key] === query[key]
+        })
+    })
+    res.json(result)
+
+})
 
 
 app.listen(5000);
