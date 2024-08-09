@@ -4,7 +4,9 @@ const logs = require('./2');
 
 app.use(logs);
 
-
+app.get('/data', (req,res)=>{
+    res.send('Data')
+})
 
 app.get('/', (req,res)=>{
     res.send('Home')
