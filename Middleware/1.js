@@ -4,6 +4,10 @@ const logs = require('./2');
 
 app.use(logs);
 
+
+app.use((req,res)=>{
+    res.send("Oops...")
+})
 app.get('/data', (req,res)=>{
     res.send('Data')
 })
