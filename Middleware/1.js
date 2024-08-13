@@ -12,6 +12,9 @@ app.use((req,res)=>{
 app.get('/data', (req,res)=>{
     res.send('Data')
 })
+app.get('/about', (req,res)=>{
+    res.send('about')
+})
 
 app.get('/', (req,res)=>{
     res.send('Home')
