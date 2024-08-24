@@ -21,6 +21,9 @@ app.get('/about', (req,res)=>{
 app.get('/about', (req,res)=>{
     res.send('about')
 })
+app.get('/about', (req,res)=>{
+    res.send('about')
+})
 app.get('/', (req,res)=>{
     res.send('Home')
 })
